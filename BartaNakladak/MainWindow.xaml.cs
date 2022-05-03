@@ -41,8 +41,27 @@ namespace BartaNakladak
             textBox.Text = nakladak.Jmeno + "\n";
             textBox.Text += "Nosnost v kg: " + nakladak.Nosnost.ToString() + "\n";
             textBox.Text += "Objem nádrže v l: " + nakladak.ObjemNadrze.ToString() + "\n";
-            textBox.Text += "Spotřeba paliva ? l / 100 km: " + nakladak.SpotrebaPaliva.ToString() + "\n";
+            textBox.Text += "Spotřeba paliva xl/100km: " + nakladak.SpotrebaPaliva.ToString() + "\n";
             textBox.Text += "Celková ujetá vzdálenost: " + nakladak.CelkovaUjetaVzdalenost.ToString() + "\n";
+            textBox.Text += "Náklad: " + nakladak.Naklad.ToString() + "\n";
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            man.Nalozit();
+            Zobraz (man, TextBox1);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            daf.Nalozit();
+            Zobraz(daf, TextBox2);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            man.Vylozit();
+            Zobraz(man, TextBox1);
         }
     }
 }

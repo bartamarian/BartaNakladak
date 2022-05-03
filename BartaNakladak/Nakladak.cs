@@ -18,14 +18,34 @@ namespace BartaNakladak
         public int ObjemNadrze { get; set; }
         public int SpotrebaPaliva { get; set; }
         public int CelkovaUjetaVzdalenost { get; set; }
+        public int Naklad { get; set; }
 
         public Nakladak()
         {
             Jmeno = " ";
-            nosnost = 20000;
-            objemnadrze = 1000;
-            spotrebapaliva = 30;
-            celkovaujetavzdalenost = 1500;
+            Nosnost = 20000;
+            ObjemNadrze = 1000;
+            SpotrebaPaliva = 30;
+            CelkovaUjetaVzdalenost = 1500;
+            Naklad = 0;
+        }
+
+        public void Nalozit()
+        {
+            Naklad += 2000;
+            if (Naklad > 20000)
+            {
+                Naklad = 20000;
+            }
+        }
+
+        public void Vylozit()
+        {
+            Naklad -= 2000;
+            if(Naklad < 0)
+            {
+                Naklad = 0;
+            }
         }
     }
 }
