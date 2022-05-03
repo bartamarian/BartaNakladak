@@ -14,7 +14,7 @@
         <Button Content="Jet" HorizontalAlignment="Left" Margin="292,236,0,0" VerticalAlignment="Top" Height="50" Width="70"/>
         <Button Content="Načerpat" HorizontalAlignment="Left" Margin="292,291,0,0" VerticalAlignment="Top" Height="50" Width="70"/>
         <Button Content="Naložit" HorizontalAlignment="Left" Margin="467,126,0,0" VerticalAlignment="Top" Height="50" Width="70" Click="Button_Click_1"/>
-        <Button Content="Vyložit" HorizontalAlignment="Left" Margin="467,181,0,0" VerticalAlignment="Top" Height="50" Width="70"/>
+        <Button Content="Vyložit" HorizontalAlignment="Left" Margin="467,181,0,0" VerticalAlignment="Top" Height="50" Width="70" Click="Button_Click_3"/>
         <Button Content="Jet" HorizontalAlignment="Left" Margin="467,236,0,0" VerticalAlignment="Top" Height="50" Width="70"/>
         <Button Content="Načerpat" HorizontalAlignment="Left" Margin="467,291,0,0" VerticalAlignment="Top" Height="50" Width="70"/>
 

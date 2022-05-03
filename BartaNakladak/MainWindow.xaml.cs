@@ -63,5 +63,11 @@ namespace BartaNakladak
             man.Vylozit();
             Zobraz(man, TextBox1);
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            daf.Vylozit();
+            Zobraz(daf, TextBox2);
+        }
     }
 }
